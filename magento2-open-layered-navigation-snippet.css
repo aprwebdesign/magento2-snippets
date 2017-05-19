@@ -1,0 +1,9 @@
+/* Or just simply add css to force open the layered navigation on desktop */
+
+@media screen and (min-width:767px){
+
+.filter-options-content[style]{
+display:block !important;
+}
+
+}
