@@ -31,3 +31,11 @@ php bin/magento module:status
 #Use when products not showing or images not displaying for products front-end
 
 php bin/magento indexer:reindex
+
+#change permission cache files when non of the above commands are working
+#Preferrable avoid these command and first try solving an other way
+
+ chmod 777 pub -R
+ chmod 777 var -R
+ 
+ 
