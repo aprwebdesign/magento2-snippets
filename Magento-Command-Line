@@ -1,0 +1,33 @@
+##
+# My personal CLI Commands for magento for easy access
+##
+
+#Clean & Flush Cache
+
+php bin/magento cache:clean
+
+php bin/magento cache:flush
+
+#Deploy static content
+
+php bin/magento setup:static-content:deploy
+
+php bin/magento setup:static-content:deploy en_US
+php bin/magento setup:static-content:deploy nl_NL
+
+#Upgrade after install
+
+php bin/magento setup:upgrade    
+
+#Run after update or repopulate cache and pub folders
+
+php bin/magento setup:di:compile 
+
+#List modules
+
+php bin/magento module:status
+
+#Reindex category and/or products
+#Use when products not showing or images not displaying for products front-end
+
+php bin/magento indexer:reindex
