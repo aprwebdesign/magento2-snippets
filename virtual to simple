@@ -1,0 +1,5 @@
+#Convert virtual product to simple product
+#Caution! this will convert all virtual products to simple products!
+#I use this query to make configurable product options (which are saved as virtual products) to simple product to enable shipping
+
+update catalog_product_entity set type_id = 'simple' where type_id = 'virtual'
